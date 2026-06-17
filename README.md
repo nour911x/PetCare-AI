@@ -14,12 +14,17 @@ Projet réalisé par **Nour**.
 
 ## Aperçu
 
-<!-- Ajoute tes captures d'écran dans un dossier "screenshots/" puis décommente les lignes ci-dessous -->
-<!-- ![Accueil](screenshots/accueil.png) -->
-<!-- ![Fiche animal](screenshots/fiche-animal.png) -->
-<!-- ![Tendances](screenshots/tendances.png) -->
+**Accueil — analyse du comportement**
 
-_Captures d'écran à venir._
+![Page d'accueil de PetCare AI](screenshots/1.png)
+
+**Carnet de l'animal & suivi du poids**
+
+![Fiche animal et suivi du poids](screenshots/2.png)
+
+**Mode urgence — triage en 3 questions**
+
+![Mode urgence](screenshots/3.png)
 
 ## Fonctionnalités
 
