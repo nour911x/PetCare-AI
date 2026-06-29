@@ -128,7 +128,7 @@ export function BenchmarksView() {
           <Card className="rounded-3xl border-border/60 shadow-soft p-6">
             <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground mb-4 flex items-center gap-2">
               <Dna className="size-4" />
-              Tempérament typique — {breed}
+              Tempérament typique : {breed}
             </h3>
             <ul className="space-y-2">
               {data.typical_traits.map((t, i) => (

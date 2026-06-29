@@ -488,7 +488,7 @@ def compute_insights(pet_name: str = None) -> dict:
             "type": "health",
             "tone": "warning",
             "text": (
-                f"{health_alerts} alerte(s) santé importante(s) ce mois-ci — "
+                f"{health_alerts} alerte(s) santé importante(s) ce mois-ci, "
                 "pense à consulter un vétérinaire."
             ),
         })

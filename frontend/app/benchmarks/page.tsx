@@ -18,7 +18,7 @@ export default function BenchmarksPage() {
               <span className="text-gradient">Benchmarks par race</span>
             </h1>
             <p className="mt-1.5 text-muted-foreground">
-              Ce qui est normal pour la race de ton animal — pour te rassurer.
+              Ce qui est normal pour la race de ton animal, pour te rassurer.
             </p>
           </div>
         </div>

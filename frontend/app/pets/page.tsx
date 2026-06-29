@@ -18,7 +18,7 @@ export default function PetsPage() {
               <span className="text-gradient">Mes animaux</span>
             </h1>
             <p className="mt-1.5 text-muted-foreground">
-              Gère les fiches de tes compagnons — elles enrichissent chaque
+              Gère les fiches de tes compagnons, elles enrichissent chaque
               analyse.
             </p>
           </div>

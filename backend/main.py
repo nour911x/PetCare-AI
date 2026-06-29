@@ -1,34 +1,7 @@
-"""Application FastAPI principale pour PetCare AI.
+"""Application FastAPI de PetCare AI.
 
-Usage :
-    uvicorn backend.main:app --reload
-    # puis ouvrir : http://localhost:8000/docs
-
-Endpoints exposés :
-    POST   /api/analyze/text       — analyse texte
-    POST   /api/analyze/image      — analyse photo (+ texte optionnel)
-    POST   /api/analyze/video      — analyse vidéo (+ texte optionnel)
-    GET    /api/history            — historique des analyses
-    GET    /api/history/pet-names  — liste des noms d'animaux
-    DELETE /api/history/{id}       — supprime une analyse
-    GET    /api/stats              — statistiques globales
-    GET    /api/pets               — liste des fiches animaux
-    POST   /api/pets               — crée une fiche animal
-    GET    /api/pets/{id}          — détail d'une fiche
-    PUT    /api/pets/{id}          — modifie une fiche
-    DELETE /api/pets/{id}          — supprime une fiche
-    POST   /api/pets/{id}/avatar   — ajoute la photo d'un animal
-    GET    /api/pets/{id}/weights  — historique de poids + analyse
-    POST   /api/pets/{id}/weights  — ajoute une pesée
-    DELETE /api/pets/{id}/weights/{entry_id} — supprime une pesée
-    GET    /api/insights          — tendances & insights sur l'historique
-    GET    /api/onboarding        — parcours nouveau propriétaire
-    GET    /api/benchmarks        — repères de comportement par race
-    GET    /api/reminders          — liste les rappels de soins
-    POST   /api/reminders          — crée un rappel
-    PUT    /api/reminders/{id}      — modifie un rappel
-    DELETE /api/reminders/{id}      — supprime un rappel
-    GET    /api/media/{filename}   — sert les images/vidéos uploadées
+Lancer avec : uvicorn backend.main:app --reload
+La liste des routes est consultable sur http://localhost:8000/docs
 """
 
 from pathlib import Path

@@ -563,7 +563,7 @@ function PetForm({
           <Label htmlFor="allergies">Allergies (optionnel)</Label>
           <Input
             id="allergies"
-            placeholder="Sépare par des virgules — ex : poulet, pollen"
+            placeholder="Sépare par des virgules, ex : poulet, pollen"
             value={form.allergies}
             onChange={(e) => set("allergies", e.target.value)}
             className="rounded-xl"

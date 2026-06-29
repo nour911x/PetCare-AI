@@ -26,7 +26,7 @@ Décris cette image en détail, en te concentrant sur les informations utiles po
 7. **Action en cours** : ce que l'animal fait (mange, dort, observe, etc.)
 8. **Environnement** : indices contextuels (gamelle, litière, fenêtre, jouet, etc.)
 
-Sois factuel et précis. N'invente rien : si une partie n'est pas visible, dis-le. Ne donne PAS d'interprétation ou de diagnostic — uniquement la description visuelle.
+Sois factuel et précis. N'invente rien : si une partie n'est pas visible, dis-le. Ne donne PAS d'interprétation ou de diagnostic, uniquement la description visuelle.
 
 Réponds en français en quelques phrases structurées (pas de liste à puces, du texte naturel)."""
 

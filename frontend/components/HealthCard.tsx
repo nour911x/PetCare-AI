@@ -106,7 +106,7 @@ export function HealthCard({ health }: Props) {
                 ))}
               </div>
               <p className="text-xs text-muted-foreground mt-2">
-                ⚠️ Ce ne sont que des pistes — un diagnostic ne peut être posé
+                ⚠️ Ce ne sont que des pistes : un diagnostic ne peut être posé
                 que par un vétérinaire.
               </p>
             </div>

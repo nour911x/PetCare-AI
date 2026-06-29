@@ -18,7 +18,7 @@ export default function RemindersPage() {
               <span className="text-gradient">Calendrier de rappels</span>
             </h1>
             <p className="mt-1.5 text-muted-foreground">
-              Vaccins, vermifuges et visites vétérinaires — ne rate plus rien.
+              Vaccins, vermifuges et visites vétérinaires : ne rate plus rien.
             </p>
           </div>
         </div>

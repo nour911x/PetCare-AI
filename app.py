@@ -103,7 +103,7 @@ def render_health_card(health: dict):
         for c in health["potential_concerns"]:
             st.markdown(f"- {c}")
         st.caption(
-            "⚠️ Ce ne sont que des pistes — un diagnostic ne peut être posé que par un vétérinaire."
+            "⚠️ Ce ne sont que des pistes : un diagnostic ne peut être posé que par un vétérinaire."
         )
 
     if health.get("when_to_consult"):
@@ -307,7 +307,7 @@ def render_analysis_page():
 
     st.success(f"✅ Analyse sauvegardée (#{analysis_id})")
 
-    # SANTÉ / URGENCE (tout en haut — priorité absolue)
+    # Santé / urgence en priorité, tout en haut
     if result.get("health"):
         st.divider()
         st.markdown("### 🏥 Évaluation santé")

@@ -196,7 +196,7 @@ def compute_breed_benchmarks(breed: str, species: str = None) -> dict:
         for emo, pct in sorted(percentages.items(), key=lambda x: -x[1])[:2]:
             phrase = _EMOTION_PHRASE.get(emo, f"montrent « {emo} »")
             highlights.append(
-                f"{pct} % des {breed} analysés {phrase} — "
+                f"{pct} % des {breed} analysés {phrase}, "
                 "ton animal n'est pas un cas isolé."
             )
     else:

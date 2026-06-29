@@ -16,7 +16,7 @@ const mono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PetCare AI — Comprends ton animal",
+  title: "PetCare AI : comprends ton animal",
   description:
     "Assistant intelligent qui analyse le comportement de ton animal. RAG + Vision + Vidéo + Détection d'émotions et d'urgence vétérinaire.",
 };

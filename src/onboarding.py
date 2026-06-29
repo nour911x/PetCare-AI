@@ -78,7 +78,7 @@ def _phases(species: str, category: str) -> list[dict]:
         jeune = "chiot" if chien else "chaton"
         return [
             {
-                "title": "Semaine 1 — L'arrivée à la maison",
+                "title": "Semaine 1 : l'arrivée à la maison",
                 "emoji": "🏠",
                 "steps": [
                     (f"Aménage un coin calme rien que pour ton {jeune}.", None),
@@ -88,7 +88,7 @@ def _phases(species: str, category: str) -> list[dict]:
                 ],
             },
             {
-                "title": "Semaine 1 — Sécuriser la maison",
+                "title": "Semaine 1 : sécuriser la maison",
                 "emoji": "🛡️",
                 "steps": [
                     ("Range les produits ménagers et médicaments en hauteur.", None),
@@ -101,7 +101,7 @@ def _phases(species: str, category: str) -> list[dict]:
                 ],
             },
             {
-                "title": "Semaine 2 — Les premiers soins",
+                "title": "Semaine 2 : les premiers soins",
                 "emoji": "💉",
                 "steps": [
                     ("Prends rendez-vous pour la primovaccination.", "vaccin"),
@@ -110,7 +110,7 @@ def _phases(species: str, category: str) -> list[dict]:
                 ],
             },
             {
-                "title": "Semaine 2-3 — Propreté & routine",
+                "title": "Semaine 2-3 : propreté et routine",
                 "emoji": "🧻",
                 "steps": [
                     proprete,
@@ -119,7 +119,7 @@ def _phases(species: str, category: str) -> list[dict]:
                 ],
             },
             {
-                "title": "Semaine 3-4 — Socialisation & éducation",
+                "title": "Semaine 3-4 : socialisation et éducation",
                 "emoji": "🎓",
                 "steps": [
                     ("Habitue-le en douceur à être manipulé (pattes, oreilles).", None),

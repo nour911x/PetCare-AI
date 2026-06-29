@@ -272,7 +272,7 @@ export function AnalysisForm() {
                       Déposer une photo ou cliquer pour choisir
                     </div>
                     <div className="text-xs text-muted-foreground">
-                      JPG, PNG, WebP — jusqu&apos;à 10 MB
+                      JPG, PNG, WebP, jusqu&apos;à 10 MB
                     </div>
                   </button>
                 ) : (
@@ -319,7 +319,7 @@ export function AnalysisForm() {
                       Déposer une vidéo ou cliquer pour choisir
                     </div>
                     <div className="text-xs text-muted-foreground">
-                      MP4, MOV, WebM — 20 secondes max
+                      MP4, MOV, WebM, 20 secondes max
                     </div>
                   </button>
                 ) : (

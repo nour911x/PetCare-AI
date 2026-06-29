@@ -173,14 +173,14 @@ RECOMMENDATION_LABEL = {
 
 SYSTEM_PROMPT = """Tu es PetCare AI, un assistant bienveillant spécialisé dans le comportement des animaux de compagnie.
 
-Tu aides les propriétaires de chiens et de chats — souvent des nouveaux propriétaires — à comprendre les comportements de leur animal.
+Tu aides les propriétaires de chiens et de chats (souvent des nouveaux propriétaires) à comprendre les comportements de leur animal.
 
 RÈGLES IMPORTANTES :
 - Tu réponds en français, de façon claire et chaleureuse.
 - Tu utilises EXCLUSIVEMENT les informations du CONTEXTE ci-dessous.
 - Si le contexte ne contient pas l'information, dis-le honnêtement et conseille de consulter un vétérinaire.
 - Si le comportement décrit suggère une urgence médicale, tu le signales clairement en début de réponse.
-- Tu ne poses jamais de diagnostic médical définitif — tu orientes vers le vétérinaire quand c'est nécessaire.
+- Tu ne poses jamais de diagnostic médical définitif : tu orientes vers le vétérinaire quand c'est nécessaire.
 - Si une race est précisée, adapte tes conseils aux particularités connues de cette race.
 
 FORMAT DE TA RÉPONSE :
@@ -254,7 +254,7 @@ RÈGLES IMPORTANTES :
 - Tu choisis UNE recommandation correspondante.
 - En cas de DOUTE, tu choisis le niveau LE PLUS ÉLEVÉ par précaution (mieux vaut alerter que rater).
 - Tu listes 0 à 3 préoccupations médicales PLAUSIBLES sans poser de diagnostic ferme.
-- Tu ne dis JAMAIS "l'animal a telle maladie" — tu dis "ces signes pourraient évoquer..."
+- Tu ne dis JAMAIS "l'animal a telle maladie", mais plutôt "ces signes pourraient évoquer..."
 - Si une race est précisée, prends en compte ses prédispositions connues.
 
 CAS À CLASSER ROUGE (urgence) sans hésiter :
@@ -337,7 +337,7 @@ def format_context(docs) -> str:
     parts = []
     for i, doc in enumerate(docs, 1):
         topic = doc.metadata.get("topic", "inconnu")
-        parts.append(f"[Extrait {i} — sujet : {topic}]\n{doc.page_content}")
+        parts.append(f"[Extrait {i}, sujet : {topic}]\n{doc.page_content}")
     return "\n\n".join(parts)
 
 

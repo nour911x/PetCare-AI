@@ -37,7 +37,7 @@ export default function HomePage() {
             </h1>
 
             <p className="mt-4 max-w-xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Décris un comportement, envoie une photo ou une courte vidéo —
+              Décris un comportement, envoie une photo ou une courte vidéo, et
               PetCare&nbsp;AI combine sources vétérinaires, vision par ordinateur
               et détection émotionnelle pour t&apos;expliquer ce qui se passe.
             </p>
