@@ -2,11 +2,11 @@
 
 Une application qui analyse le comportement des animaux de compagnie (chiens et chats) pour aider leurs propriétaires à mieux les comprendre.
 
-On décrit le comportement de son animal — par texte, photo ou courte vidéo — et l'application répond en s'appuyant sur des sources vétérinaires. Elle gère aussi un carnet de suivi : fiche santé, poids, rappels de soins et export d'un dossier pour le vétérinaire.
+On décrit le comportement de son animal (par texte, photo ou courte vidéo) et l'application répond en s'appuyant sur des sources vétérinaires. Elle gère aussi un carnet de suivi : fiche santé, poids, rappels de soins et export d'un dossier pour le vétérinaire.
 
 ## Captures
 
-Accueil — analyse du comportement :
+Accueil et analyse du comportement :
 
 ![Page d'accueil](screenshots/1.png)
 
@@ -14,7 +14,7 @@ Carnet de l'animal et suivi du poids :
 
 ![Fiche animal](screenshots/2.png)
 
-Mode urgence — triage en 3 questions :
+Mode urgence avec triage en 3 questions :
 
 ![Mode urgence](screenshots/3.png)
 
