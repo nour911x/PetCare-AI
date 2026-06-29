@@ -1,0 +1,44 @@
+# Environnement virtuel
+venv/
+.venv/
+env/
+
+# Variables d'environnement et secrets
+.env
+*.key
+
+# Vector store (regenerable)
+data/chroma_db/
+
+# Données runtime (base SQLite + médias uploadés) — on garde data/knowledge_base/
+data/petcare.db
+data/uploads/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Logs
+*.log
