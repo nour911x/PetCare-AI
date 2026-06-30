@@ -4,6 +4,7 @@ Lancer avec : uvicorn backend.main:app --reload
 La liste des routes est consultable sur http://localhost:8000/docs
 """
 
+import os
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
@@ -34,16 +35,12 @@ app = FastAPI(
 )
 
 
-ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:3001",
-]
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

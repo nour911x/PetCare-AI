@@ -1,0 +1,13 @@
+venv/
+node_modules/
+frontend/
+notebooks/
+screenshots/
+.git/
+.env
+__pycache__/
+*.pyc
+data/chroma_db/
+data/petcare.db
+data/uploads/
+data/models/
