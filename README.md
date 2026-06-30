@@ -38,6 +38,28 @@ Mode urgence avec triage en 3 questions :
 - **Backend** : FastAPI, SQLAlchemy, SQLite
 - **IA** : LangChain + ChromaDB pour le RAG, modèles Groq (Llama) pour le texte et la vision, OpenCV + MediaPipe pour la vidéo
 
+## Évaluation du RAG
+
+La qualité d'un système RAG dépend d'abord de sa capacité à retrouver le bon document. J'ai mesuré le retrieval sur 16 questions test, chacune étiquetée avec l'espèce et le sujet attendu (script reproductible : `evaluate_rag.py`).
+
+| Métrique | Résultat |
+|----------|----------|
+| Hit-rate@4 | 75 % (12/16) |
+| MRR | 0,66 |
+
+- **Hit-rate@4** : dans 75 % des cas, le bon document figure parmi les 4 extraits récupérés.
+- **MRR de 0,66** : quand le bon document est récupéré, il ressort presque toujours en première position.
+
+Les erreurs viennent surtout de questions à la frontière de deux sujets proches (par exemple une question sur le stress, qui peut relever autant des « émotions » que des « comportements sociaux »).
+
+Pistes d'amélioration : enrichir la base avec plus de documents par sujet, ajouter une recherche hybride (BM25 + vectoriel), un re-ranking des extraits, ou un modèle d'embeddings plus grand.
+
+Pour reproduire l'évaluation :
+
+```powershell
+py evaluate_rag.py
+```
+
 ## Installation
 
 Il faut Python 3.13+, Node.js 20+ et une clé API Groq (gratuite).
