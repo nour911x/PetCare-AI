@@ -1,14 +1,6 @@
----
-title: PetCare AI
-emoji: 🐾
-colorFrom: blue
-colorTo: green
-sdk: docker
-app_port: 7860
-pinned: false
----
-
 # PetCare AI
+
+🔗 **Démo en ligne : [pet-care-ai-black.vercel.app](https://pet-care-ai-black.vercel.app)**
 
 Une application qui analyse le comportement des animaux de compagnie (chiens et chats) pour aider leurs propriétaires à mieux les comprendre.
 
